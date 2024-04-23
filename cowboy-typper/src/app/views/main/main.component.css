@@ -32,6 +32,7 @@
 h1 {
     font-size: 80px;
     align-items: center;
+    user-select: none;
 }
 .box-name {
     background-color: rgb(175, 109, 23);
@@ -39,11 +40,13 @@ h1 {
     padding-bottom: 10px;
     padding-top: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    user-select: none;
 }
 .list-group {
     --bs-list-group-bg: transparent; /* Establece el fondo de los list group como transparente */
     font-weight: bold;
     margin-bottom: 50px;
+    user-select: none;
 }
 
 h3 {

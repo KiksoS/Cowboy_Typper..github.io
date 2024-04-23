@@ -1,27 +1,24 @@
 <footer class="container-fluid g-0">
-   
-    <div class="row">
-        <div class="col-4">
-            <audio controls id="myAudio" loop> <!-- Hay que poner el autoplay -->
-                <source src="../../../assets/audio/main-song.mp3" type="audio/mp3">
-            </audio>
-            <button (click)="music()"><img src={{img}} alt=""></button>
-            <!--  -->
-        </div>
-        <div class="col-4 text-center">
-            <a>Instrucciones del juego</a>
-        </div>
-        
+  <div class="row">
+    <div class="col-4">
+      <audio controls id="myAudio" loop>
+        <!-- Hay que poner el autoplay -->
+        <source src="../../../assets/audio/main-song.mp3" type="audio/mp3" />
+      </audio>
+      <button (click)="music()"><img src="{{ img }}" alt="" /></button>
+      <!--  -->
     </div>
-    
-    <div class="row text-center">
-        <div class="col-4 text-center offset-4">
-            <p>Hecho por kikso</p>
-        </div>
-        <div class="col-4 text-end">
-            <p>&copy; 2024 Cowboy Typper. Todos los derechos reservados.</p>
-        </div>
+    <div class="col-4 text-center">
+      <a>Instrucciones del juego</a>
     </div>
+  </div>
 
-
+  <div class="row text-center">
+    <div class="col-4 text-center offset-4">
+      <p>Hecho por kikso</p>
+    </div>
+    <div class="col-4 text-end">
+      <p>&copy; 2024 Cowboy Typper. Todos los derechos reservados.</p>
+    </div>
+  </div>
 </footer>

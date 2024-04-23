@@ -21,6 +21,7 @@ img {
     width: 70px;
     padding: 10px;
     filter: invert(100%) contrast(200%) brightness(200%);
+    user-select: none;
 }
 .container-fluid {
     padding: 10px 0; 
@@ -30,8 +31,9 @@ img {
     width: 100vw;
     overflow: hidden; 
 }
-.footer p {
+.col-4 p {
     margin-bottom: 0; 
+    user-select: none;
 }
 
 #myAudio {

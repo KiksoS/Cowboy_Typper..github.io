@@ -1,2 +1,4 @@
 https://aipixelartgenerator.com - creador de imagenes
 https://pixabay.com/es/sound-effects - Sonido
+https://getbootstrap.com/ - docs bootstrap
+https://github.com/ - sistema de guardado

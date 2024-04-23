@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MainComponent } from './views/main/main.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { GameComponent } from './views/game/game.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MainComponent, FooterComponent],
+  imports: [CommonModule, RouterOutlet, MainComponent, FooterComponent, GameComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

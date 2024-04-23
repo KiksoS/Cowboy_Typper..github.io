@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { MainComponent } from './views/main/main.component';
+import { GameComponent } from './views/game/game.component';
 
 export const routes: Routes = [
 
@@ -11,5 +12,10 @@ export const routes: Routes = [
     {
         path: 'main',
         component: MainComponent
+    },
+    {
+        path:'game',
+        component: GameComponent
     }
+
 ];
