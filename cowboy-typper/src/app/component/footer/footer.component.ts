@@ -1,0 +1,34 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-footer',
+  standalone: true,
+  imports: [],
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.css'
+})
+export class FooterComponent {
+
+  img: string = "https://www.svgrepo.com/show/532511/play.svg";
+  isPlayed: boolean = true;
+
+  
+
+  ngOnInit(): void {
+    const audio = document.getElementById("myAudio") as HTMLAudioElement;
+    audio.volume = 0.3; // Establece el volumen predeterminado al 50%
+  }
+  
+  music(): void{
+    const audio = document.getElementById("myAudio") as HTMLAudioElement
+    if (this.isPlayed) {
+      audio.pause()
+      this.isPlayed = false;
+      this.img = "https://www.svgrepo.com/show/514191/pause.svg"
+    }else {
+      audio.play()
+      this.isPlayed = true;
+      this.img = "https://www.svgrepo.com/show/532511/play.svg"
+    }
+  }
+}

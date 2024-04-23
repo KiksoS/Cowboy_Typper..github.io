@@ -1,0 +1,39 @@
+.row {
+    color: #fff; /* Color del texto */
+    align-items: center;
+    
+}
+button {
+    background-color: transparent;
+    border: none;
+    height: 30px;
+}
+a {
+    font-size: 24px;
+    color: #fff,
+}
+
+p {
+    padding-right: 20px;
+}
+
+img {
+    width: 70px;
+    padding: 10px;
+    filter: invert(100%) contrast(200%) brightness(200%);
+}
+.container-fluid {
+    padding: 10px 0; 
+    background-color: #744621; 
+    position: relative;
+    height: 10vh;
+    width: 100vw;
+    overflow: hidden; 
+}
+.footer p {
+    margin-bottom: 0; 
+}
+
+#myAudio {
+    display: none;
+}

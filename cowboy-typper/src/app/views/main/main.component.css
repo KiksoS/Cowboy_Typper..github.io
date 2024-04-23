@@ -1,0 +1,69 @@
+.container-fluid {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    overflow: hidden; /* Para ocultar el contenido del pseudo-elemento fuera del contenedor */
+}
+
+.container-fluid::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../assets/img/scenario/main-scenario.jpg);
+    background-size: cover; /* Hace que la imagen de fondo cubra completamente el pseudo-elemento */
+    filter: blur(10px); /* Aplica un desenfoque a la imagen de fondo */
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+}
+
+.container-fluid::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.082); /* Agrega una capa semi-transparente para difuminar */
+    z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+}
+
+h1 {
+    font-size: 80px;
+    align-items: center;
+}
+.box-name {
+    background-color: rgb(175, 109, 23);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.list-group {
+    --bs-list-group-bg: transparent; /* Establece el fondo de los list group como transparente */
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin-bottom: 1em;
+    font-size: 1.8em;
+}
+
+.play {
+    width: 150px;
+    padding: 5px 10px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.play:hover {
+    background-color: #45a049; /* Color de fondo cuando se pasa el mouse */
+}
