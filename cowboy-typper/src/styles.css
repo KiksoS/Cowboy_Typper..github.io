@@ -5,3 +5,18 @@ body {
     height: 98vh;
     width: 98vw;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.letter {
+    color: #8AB6D6; /* Azul pastel */
+}
+
+.current {
+    color: #f70029; /* Rosa pastel */
+}
+
+.success {
+    color: #78D5B3; /* Verde pastel */
+}

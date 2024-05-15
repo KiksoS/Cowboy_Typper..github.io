@@ -1,0 +1,39 @@
+.main {
+  width: 1200px;
+  background-color: rgb(175, 109, 23);
+
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 20px 100px;
+}
+mat-dialog-actions button {
+  
+  width: 70px;
+  padding: 5px 10px;
+  border: 1px;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: center;
+}
+
+mat-dialog-actions button:hover {
+  background-color: #45a049; /* Color de fondo cuando se pasa el mouse */
+}
+
+
+

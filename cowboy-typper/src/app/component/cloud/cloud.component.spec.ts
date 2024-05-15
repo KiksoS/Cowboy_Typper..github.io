@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MainComponent } from './main.component';
 
+import { CloudComponent } from './cloud.component';
 
-describe('MainComponent', () => {
-  let component: MainComponent;
-  let fixture: ComponentFixture<MainComponent>;
+describe('CloudComponent', () => {
+  let component: CloudComponent;
+  let fixture: ComponentFixture<CloudComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MainComponent]
+      imports: [CloudComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(MainComponent);
+    fixture = TestBed.createComponent(CloudComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -11,39 +11,37 @@
     
 }
 
-.gcloud-1 img {
+.gcloud-1 app-gcloud {
     position: absolute;
     top: 80px;
     right: 420px;
     
 }
 
-.gcloud-2 img {
+.gcloud-2 app-gcloud {
     position: absolute;
     top: 0px;
     right: 180px;
 }
-.gcloud-3 img {
+.gcloud-3 app-gcloud {
     position: absolute;
     top: 170px;
     right: 0px;
 }
 
-.cloud-1 img{
+.cloud-1 app-cloud{
     position: absolute;
     top: 0px;
     right: 0px;
     z-index: 1;
-    display: none;
     
 }
-.cloud-2 img {
+.cloud-2 app-cloud{
     
     position: absolute;
     top: 350px;
     right: 0px;
     z-index: 1;
-    display: none;
 }
 .sun {
     position: absolute;
@@ -69,18 +67,31 @@
     bottom: 220px;
     left: 80px;
     z-index: 2;
-    display: none;
+    display: flex;
    
 }
+
+
+.isShooted {
+    display: flex;
+
+}
 .bullet img {
+    display: none;
+    position: absolute;
     height: 30px;
 }
 
 .enemy {
     position: absolute;
-    bottom: 170px;
+    bottom: 230px;
     right: 210px;
     z-index: 2;
+}
+
+.enemy img{
+    position: absolute;
+
 }
 
 .cactus-1 {
@@ -119,5 +130,7 @@ span {
     background-color: rgb(250, 244, 235);
     border-radius: 40px;
 }
+
+
 
 

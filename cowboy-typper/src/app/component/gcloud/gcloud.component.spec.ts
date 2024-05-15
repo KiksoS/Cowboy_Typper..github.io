@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MainComponent } from './main.component';
 
+import { GcloudComponent } from './gcloud.component';
 
-describe('MainComponent', () => {
-  let component: MainComponent;
-  let fixture: ComponentFixture<MainComponent>;
+describe('GcloudComponent', () => {
+  let component: GcloudComponent;
+  let fixture: ComponentFixture<GcloudComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MainComponent]
+      imports: [GcloudComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(MainComponent);
+    fixture = TestBed.createComponent(GcloudComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

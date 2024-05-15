@@ -2,7 +2,7 @@
     <div class="gameLayout">
         <header class="row">
             <div class="col-12 mb-5 mt-5">
-                <h1 class="text-center">Score: 500</h1>
+                <h1 class="text-center">Score: {{score}}</h1>
             </div>
         </header>
         <div class="row sky">
@@ -10,19 +10,19 @@
                 <img src="../../../assets/img/sky/sun.png">
             </div>
             <div class="gcloud-1 col-1 g-0 offset-2">
-                <img src="../../../assets/img/sky/golden-cloud-1.png">
+                <app-gcloud [id]="1"></app-gcloud>
             </div>
             <div class="gcloud-2 col-2 g-0">
-                <img src="../../../assets/img/sky/golden-cloud-2.png">
+                <app-gcloud [id]="2"></app-gcloud>
             </div>
             <div class="gcloud-3 col-2 g-0">
-                <img src="../../../assets/img/sky/golden-cloud-1.png">
+                <app-gcloud [id]="1"></app-gcloud>
             </div>
             <div class="cloud-1 col-1 g-0">
-                <img src="../../../assets/img/sky/cloud-1.png">
+                <app-cloud [id]="1"></app-cloud>
             </div>
             <div class="cloud-2 col-1 g-0">
-                <img src="../../../assets/img/sky/cloud-2.png">
+                <app-cloud [id]="2"></app-cloud>
             </div>
         </div>
         <div class="row ground">
@@ -32,14 +32,14 @@
         </div>
         <div class="row">
             <div class="character col-2">
-                <span>Kikso</span>
+                <span>{{CharName}}</span>
                 <img src="../../../assets/img/ally/ally.png">
             </div>
-            <div class="bullet col-2">
+            <div class="bullet col-1">
                 <img src="../../../assets/img/ground/bullet.png">
             </div>
             <div class="enemy col-2">
-                <img src="../../../assets/img/enemy/enemy-1.png">
+                <img [src]="isWalking ? '../../../assets/img/enemy/enemy-walk-' + idEnemy + '.png' : '../../../assets/img/enemy/enemy-' + idEnemy + '.png'" class="minion" alt="Enemy"> 
             </div>
             <div class="cactus-1 col-2">
                 <img src="../../../assets/img/ground/cactus-1.png">
@@ -53,6 +53,7 @@
             <div class="dino col-2">
                 <img src="../../../assets/img/ground/dino.png">
             </div>
+            <app-tpper [parentComponent]="this" (cambioBooleano)="setGame($event)"></app-tpper>
         </div>
         <div>
     </div>
